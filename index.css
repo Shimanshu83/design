@@ -1,0 +1,157 @@
+html{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    margin: 0px; 
+    padding : 0px ;
+
+}
+
+* {
+    color : #2F4F4F;
+    font-family: 'Oswald', sans-serif;
+    margin : 0px;
+    padding : 0px;
+}
+
+#nav{
+    display : flex;
+    height: 4.2rem ;
+    border-bottom: 1px solid silver;
+    flex-direction  : row;   
+    flex-wrap : nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    position : sticky;
+    top : 0px ;
+    z-index: 23;
+    background-color: white;
+
+}
+
+#nav img {
+    height: 2.4rem;
+    width : 2.4rem; 
+    position: relative;
+    top : -5px;
+    /* display: block; */
+}
+#nav span{
+    margin: 0.2em;
+    font-size: 1.8rem;
+    font-weight :500;
+    font-family: 'Oswald', sans-serif;
+    font-weight : 300;
+    /* font-family:  'Neuton', serif; */
+    /* display: block; */
+}
+#logo_container{
+    margin-left : 3vw ;
+}
+#nav a {
+    font-size : 1rem;
+    text-decoration: none;
+    cursor:pointer;
+    padding : 0.3em;
+    border : 1px solid black;
+    color : white ;
+    font-weight : bolder;
+    background-color : green  ;
+    border-radius: 8px;
+    margin-right : 3vw ;
+
+
+
+}
+
+#start:hover{
+    /* background-color: green;
+     */
+    color : black;
+    border : 1px solid silver;
+
+
+}
+
+/* @media (max-width : 500px ){
+    html{
+        font-size : 12px;
+    }
+} */
+
+
+/* just created a fully responsive navbar  */
+.main-container{
+    width : 80%;
+    margin: 0px auto;
+    height : 100vh ; 
+    border : 1px dotted black ;
+    max-width : 1100px;
+    /* min-width : 300px ; */
+
+}
+
+@media (max-width : 500px ){
+    .main-container{
+        width : 100%;
+    }
+}
+
+.title_dates{
+    
+    display : flex ; 
+    flex-direction : column ; 
+    width : 100%;
+    /* border : 1px solid red ; */
+    align-items : center;
+    margin-bottom : 2.5rem ;
+}
+
+#title {
+    color :green;
+    font-size : 3rem ;
+    margin-top : 0.8em ;
+    margin-bottom : 0.3rem ;
+    font-weight : 600 ; 
+}
+#date_time{
+    font-weight : 300;
+    /* font-size : 0.8em; */
+    
+}
+.total_stats{
+    width : 100%;
+    display : flex;
+    flex-wrap : wrap ;
+    flex-direction : row ;
+    justify-content : space-around ;
+}
+.total{
+    
+    border-top : 2px solid silver;
+    width : 120px ;
+    margin : 0px 20px;
+    flex-grow : 2;
+    flex-shrink:2;
+    
+}
+@media (max-width : 800px){
+    .total{
+        width  : 250px;
+
+    }
+}
+@media (max-width : 700px){
+    .total{
+    width  : 30%;
+
+    }
+}
+.total_num{
+    font-size : 50px;
+
+}
+
+
