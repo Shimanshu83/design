@@ -1,0 +1,461 @@
+/* 
+##############################
+##############################
+two breakpoint 
+640 < here i will at certain interval decrease the font size
+640 >
+##############################
+##############################
+*/
+
+
+/* 
+adding the google font oswald offline 
+*/
+/* 
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/home/shimanshuyadav/WatsappAnalyticaDev/WatsappAnalytica_beta_1/static/FONT/Oswald-VariableFont_wght.ttf');
+    src: local('Oswald'), local('Oswald'), url('/home/shimanshuyadav/WatsappAnalyticaDev/WatsappAnalytica_beta_1/static/FONT/Oswald-VariableFont_wght.ttf') format('truetype');
+} */
+html{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    margin: 0px; 
+    padding : 0px ;
+
+}
+
+* {
+    color : #2F4F4F;
+    font-family: 'Oswald', sans-serif;
+    margin : 0px;
+    padding : 0px;
+}
+
+
+/* 
+##############################
+##############################
+Navigation bar
+##############################
+##############################
+*/
+
+#nav{
+    display : flex;
+    font-size : 1rem; 
+    height: 4.2em ;
+    border-bottom: 1px solid silver;
+    flex-direction  : row;   
+    flex-wrap : nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    position : sticky;
+    top : 0px ;
+    z-index: 23;
+    background-color: white;
+
+}
+
+#logo_container{
+    display : flex; 
+    align-items: center ;
+
+}
+
+#nav img {
+    height: 2.4em;
+    width : 2.4em; 
+    position: relative;
+    /* top : -5px; */
+    display: block;
+}
+#nav span{
+    margin: 0.2em;
+    font-size: 1.8em;
+    font-weight :500;
+    font-family: 'Oswald', sans-serif;
+    font-weight : 300;
+    /* font-family:  'Neuton', serif; */
+    display: block;
+}
+#logo_container{
+    margin-left : 3vw ;
+}
+#nav a {
+    margin : 0px ;
+    font-size : 1em;
+    text-decoration: none;
+    cursor:pointer;
+    padding : 0.5em;
+    border : 1px solid black;
+    color : white ;
+    font-weight : bold;
+    background-color : green  ;
+    border-radius: 8px;
+    margin-right : 3vw ;
+
+
+
+}
+
+#start:hover{
+    background-color: green;
+    color : black;
+    border : 1px solid silver;
+
+
+}
+
+/* @media (max-width : 500px ){
+    html{
+        font-size : 12px;
+    }
+} */
+
+
+
+/* 
+##############################
+##############################
+main_container
+##############################
+##############################
+*/
+
+.main-container{
+    width : 80%;
+    margin: 0px auto;
+    /* height : 100vh ;  */
+    border : 1px dotted black ;
+    max-width : 1100px;
+    /* min-width : 300px ; */
+
+}
+
+
+@media (max-width : 880px ){
+    .main-container{
+        width : 90%;
+    }
+}
+@media (max-width : 700px ){
+    .main-container{
+        width : 100%;
+    }
+}
+
+.title_dates{    
+    display : flex ; 
+    flex-direction : column ; 
+    width : 100%;
+    font-size : 1rem ;
+    /* border : 1px solid red ; */
+    align-items : center;
+    margin-bottom : 2.4em ;
+}
+
+#title {
+    color :green;
+    font-size : 3em ;
+    margin-top : 1.2em ;
+    margin-bottom : 0.3rem ;
+    font-weight : 600 ; 
+    margin-left : 15px;
+    margin-right :15px;
+}
+
+#date_time{
+    font-weight : 300;
+    font-size : 1em;
+    margin : 0px ;
+    padding : 0px; 
+    margin-left : 15px;
+    margin-right :15px;
+}
+
+
+
+
+
+
+
+
+.container1{
+    width : 100%;
+    font-size: 1rem;
+}
+.sub_heading{
+    font-size: 1.8em;
+    /* color : lightgreen ; */
+    margin : 0.2em 10px;
+    width : 100%;
+
+}
+.total_stats{
+    width : 100%;
+    display : flex;
+    flex-wrap : wrap ;
+    flex-direction : row ;
+    justify-content : space-around ;
+    font-size : 1em;
+}
+
+.total{    
+    border-top : 1px solid silver;
+    margin : 0px 1em;
+    flex-grow : 2;
+    /* flex-shrink:2;    */
+    font-size : 1em;  
+}
+.total_name{
+    font-weight : 300;
+    color : rgb(30, 34, 36);
+    font-size : 1em;
+}
+.total_num{
+    font-size : 3em;
+    color : green ;
+    margin-bottom : 0.3em;
+}
+
+
+@media (max-width : 800px){
+    .total{
+        width  : 250px;
+
+    }
+}
+
+@media (max-width : 700px){
+    .total{
+    width  : 30%;
+
+    }
+}
+
+
+
+
+.user_section{
+    width : 100%;
+    font-size : 1rem;
+    margin : 2em 0px ;
+}
+
+.user_subheading{
+    border-bottom : 2px solid silver;
+    font-size: 1.8em;
+    /* color : lightgreen ; */
+    margin : 0.2em 10px ;
+    width : 97%;
+
+}
+
+.user_content{
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    justify-content : space-between; 
+}
+
+.user_right_section{
+    margin-left : 10px ;
+    width : 25%;
+    display : flex;
+    flex-direction : column ;
+    font-size : 1em;
+    justify-content: space-evenly;
+    /* height : 100%; */
+    
+}
+
+.user_right_section_top{
+    border-top : 0.1em solid silver;
+    margin : 0px 1em;
+    /* flex-grow : 2;
+    flex-shrink:2;    */
+    font-size : 1em;  
+
+}
+.user_right_section_bottom{
+    border-top : 0.1em solid silver;
+    margin : 0px 1em;
+    /* flex-grow : 2;
+    flex-shrink:2;    */
+    font-size : 1em;  
+}
+
+.total_user{
+    font-size : 3em;
+    color : green ;
+    
+}
+.total_name_section{
+    font-weight : 300;
+    color : rgb(30, 34, 36);
+    font-size : 1em;
+}
+/* 
+.user_right_section_top  > p {
+
+
+} */
+.user_left_section{
+    width : 70%;
+    height : 35vw;
+    border : 1px dotted red ;
+    margin : 0px 10px ;
+}
+
+/* 
+making the user section responsive
+*/
+
+@media (max-width : 800px){
+    .user_content{
+        flex-direction: column;
+    }
+    .user_right_section{
+        flex-direction : row; 
+        width : 100%;
+
+    }
+    .user_left_section{
+        width: 100%;
+        margin: 0px ;
+        height : 56vw;
+
+    }
+    
+@media (max-width : 700px){
+
+    .user_left_section{
+        width: 100%;
+        margin: 0px ;
+        height : 60vw;
+
+    }
+    
+
+}
+@media (max-width : 500px){
+    .user_right_section{
+        margin-left : 10px ;
+        display : flex;
+        flex-direction : column ;
+        font-size : 1em;
+        
+    }
+    .user_right_section_child{
+        flex-grow : 2;
+        max-width : 80%;
+        
+        /* align-self: center; */
+    }
+    
+
+}
+
+
+
+/* 
+############################
+############################
+using media query to change the size on 500 and 350
+###########################
+###########################
+*/
+
+@media (max-width : 500px ){
+    #nav{
+        font-size : 0.85rem;
+    }
+    .title_dates{
+        font-size: 0.85rem;
+    }
+    .container1{
+        font-size:0.85rem ;
+    }
+
+    .user_section{
+        font-size:0.85rem ;
+    }
+}
+
+@media (max-width : 400px ){
+    #nav{
+        font-size : 0.73rem;
+    }
+    .title_dates{
+        font-size: 0.73rem;
+    }
+    .container1{
+        font-size:0.73rem ;
+    }
+
+    .user_section{
+        font-size:0.73rem ;
+    }
+}
+
+@media (max-width : 230px ){
+    #nav{
+        font-size : 0.68rem;
+    }
+    .title_dates{
+        font-size: 0.68rem;
+    }
+    .container1{
+        font-size:0.68rem ;
+    }
+    #nav a {
+        display : none;
+    }
+
+    .total_stats{
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+    .total{
+        flex-grow : 2;
+        margin : 0px ;
+    }
+
+
+    .user_section{
+        font-size:0.68rem ;
+    }
+
+}
+@media (min-width : 1100px ){
+    #nav{
+        font-size : 1rem;
+    }
+    .title_dates{
+        font-size: 1.07rem;
+    }
+    .container1{
+        font-size:1.07rem ;
+    }
+    .user_section{
+        font-size:1.07rem ;
+    }
+
+}
+
+/* 
+#####################
+#####################
+Users stats
+####################
+####################
+*/
